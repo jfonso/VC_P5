@@ -3,7 +3,7 @@
 ## Desarrollo de la práctica
 Esta práctica ha consistido en el desarrollo de un prototipo de temática libre que provoqué reacciones a partir de la información extraída del rostro. La propuesta realizada consiste en el desplazamiento en el rostro de varias características faciales (boca, ojos y nariz) utilizando el ratón en el video capturado a través de la cámara. Las imágenes de demostración se capturaron utilizando el video *head-pose-face-detection-male.mp4* del repositorio indicado en la fuente[^1].
 
-Utilizando la función *DetectLargestFaceEyesDNN* de [FaceDetectors.py](FaceDetectors.py), se obtiene el rectángulo que contiene la cara y los puntos de referencia faciales. Estos puntos creamos varias máscaras que nos permiten extraer las características faciales que se podrán desplazar.
+Utilizando el detector *DNN* y el modelo de máscaras faciales *shape_predictor_68_face_landmarks.dat* mediante las funciones proporcionadas por [FaceDetectors.py](FaceDetectors.py), se obtiene el rectángulo que contiene la cara y los puntos de referencia faciales. Estos puntos creamos varias máscaras que nos permiten extraer las características faciales que se podrán desplazar.
 
 ![title](Cam1.png)
 ![title](mask.png)
